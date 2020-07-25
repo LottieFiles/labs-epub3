@@ -1,0 +1,3 @@
+[submodule "epub3-samples"]
+	path = epub3-samples
+	url = https://github.com/IDPF/epub3-samples.git
