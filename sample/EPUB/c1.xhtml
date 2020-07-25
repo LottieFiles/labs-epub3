@@ -1,13 +1,30 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
     <head>
-        <title>Classification</title>
+        <title>Newtons Apple</title>
         <link type="text/css" rel="stylesheet" href="style.css"/> 
         <script type="text/javascript" src="script/lottie.min.js"></script>
     </head>
     <body>
         <h2 id="c1">Newton</h2>
 
-        <div id="canvas" style="height: 12em;"></div> 
+        <div id="canvas" style="height: 12em;">
+            <img src="cover.jpg" style="height: 12em;"></img> 
+        </div>
+        
+        <script type="text/javascript">
+
+            // clear out the placeholder
+            var elem = document.getElementById("canvas");
+            elem.innerHTML = "";
+
+            lottie.loadAnimation({
+                container: elem, // Required
+                renderer: 'svg',
+                loop: true,
+                autoplay: true,
+                path: 'lottie/newton.json', // Required
+            });
+        </script>
 
         <p>Legend has it that a young Isaac Newton was sitting under an apple tree when he was bonked on the head by a falling piece of fruit,
         a 17th-century “aha moment” that prompted him to suddenly come up with his law of gravity. In reality, things didn’t go down quite 
@@ -33,14 +50,6 @@
         <p><em>Except from: https://www.history.com/news/did-an-apple-really-fall-on-isaac-newtons-head</em></p>
 
 
-        <script type="text/javascript">
-                lottie.loadAnimation({
-                    container: document.getElementById('canvas'), // Required
-                    renderer: 'svg',
-                    loop: true,
-                    autoplay: true,
-                    path: 'lottie/newton.json', // Required
-                });
-        </script>
+
     </body>
 </html>
