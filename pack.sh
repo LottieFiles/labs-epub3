@@ -1,1 +1,3 @@
-epub3-samples/pack-single.sh
+#!/bin/sh
+
+java -jar epubcheck/epubcheck.jar $@ -mode exp -save
